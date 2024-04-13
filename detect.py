@@ -31,10 +31,10 @@ def main():
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 0), 2)
                 # cv2.putText(frame, label, (x1, y1), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 1)
     
-        cv2.imshow('YOLOv5 Detection', frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
-        # out.write(frame)
+        # cv2.imshow('YOLOv5 Detection', frame)
+        # if cv2.waitKey(1) & 0xFF == ord('q'):
+        #     break
+        out.write(frame)
 
     cap.release()
     out.release()
